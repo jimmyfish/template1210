@@ -1,0 +1,1 @@
+{"version":3,"sources":["site/_base.sass","variable/_color.sass"],"names":[],"mappings":"AAAA,IAAI,CAAC;EACD,WAAW,EAAE,wBAAwB;EACrC,WAAW,EAAE,GAAG;EAChB,KAAK,ECHG,IAAI,GDGQ","file":"../app.min.css","sourcesContent":["body {\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 300;\n    color: $baseColor; }\n","$baseColor: #333;\n"]}
