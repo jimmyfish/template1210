@@ -12,7 +12,6 @@ body {
 
 #first-section {
   min-height: 200px;
-  max-height: 500px;
   overflow: hidden; }
   #first-section [class^="col-md"] {
     padding: 0; }
@@ -20,8 +19,9 @@ body {
     padding: 0; }
   #first-section .row {
     margin: 0; }
+  #first-section .dark-background {
+    padding: 10px 30px; }
   #first-section .content {
-    padding: 10px 30px;
     color: #fff;
     font-size: 16px; }
     #first-section .content .row {
@@ -32,6 +32,22 @@ body {
         font-weight: 400; }
       #first-section .content .content-desc p {
         margin-bottom: 0; }
+  #first-section .icon-bar {
+    width: 100%;
+    background: #f1c40f; }
+    #first-section .icon-bar p {
+      margin: 0; }
+    #first-section .icon-bar a {
+      border-bottom: 1px solid #c29d0b;
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: #333; }
+      #first-section .icon-bar a:hover {
+        text-decoration: none;
+        background-color: #010100;
+        color: #fff; }
 
 .navbar {
   margin-bottom: 0; }
@@ -50,7 +66,7 @@ body {
   background: #B0191B; }
 
 .yellow-background {
-  background: #F6C50D; }
+  background: #f1c40f; }
 
 .strong-type {
   font-weight: 700; }
@@ -63,5 +79,11 @@ body {
 
 .no-left-padding {
   padding-left: 0; }
+
+.hauto {
+  height: auto; }
+
+.h500 {
+  min-height: 500px; }
 
 /*# sourceMappingURL=maps/app.min.css.map */
