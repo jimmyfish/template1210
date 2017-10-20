@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     minifyCSS = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
     sass = require('gulp-sass'),
     less = require('gulp-less'),
     concat = require('gulp-concat'),
@@ -19,6 +20,7 @@ gulp.task('style', function() {
     gulp.src('public/sass/base.sass')
     .pipe(sourcemaps.init())
     .pipe(sass())
+    .pipe(cleanCSS())
     .pipe(concat('app.min.css'))
     // .pipe(autoprefixer())
     .pipe(sourcemaps.write('maps/'))
