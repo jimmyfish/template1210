@@ -1,71 +1,135 @@
+.section-title
+    text-align: center
+    font-size: 3em
+    font-weight: 700
+    margin-bottom: 50px
+
+.header
+    margin-bottom: 50px
+
 #topper-nav
     background: $baseColor
     color: #fff
     padding: 8px
 
 #first-section
-	min-height: 200px
-	overflow: hidden
+    min-height: 200px
+    overflow: hidden
 
-	[class^="col-md"]
-		padding: 0
+    [class^="col-md"]
+        min-height: 610px
+        padding: 0
 
-	.container-fluid
-		padding: 0
+    .container-fluid
+        padding: 0
 
-	.row
-		margin: 0
+    .row
+        margin: 0
 
-	.dark-background
-		padding: 10px 30px
+    .dark-background
+        padding: 10px 30px
 
-	.content
-		color: #fff
-		font-size: 16px
+    .slider-content
+        background-image: url("../img/1.jpg")
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
 
-		.row
-			margin-bottom: 20px
+    .content
+        color: #fff
+        font-size: 16px
 
-		.content-desc
-			font-weight: 300
+        .row
+            margin-bottom: 20px
 
-			.inner-title
-				font-weight: 400
+        .content-desc
+            font-weight: 300
 
-			p
-				margin-bottom: 0
+            .inner-title
+                font-weight: 400
 
-	.icon-bar
-		width: 100%
-		background: $yellow
-		// overflow: auto
+            p
+                margin-bottom: 0
 
-		p
-			margin: 0
+    .icon-bar
+        width: 100%
+        background: $yellow
 
-		a
-			border-bottom: 1px solid darken($yellow, 10%)
-			display: block
-			text-align: center
-			padding: 16px
-			transition: all 0.3s ease
-			color: #333
+        p
+            margin: 0
 
-			&:hover
-				text-decoration: none
-				background-color: darken($yellow, 50%)
-				color: #fff
+        a
+            border-bottom: 1px solid darken($yellow, 10%)
+            display: block
+            text-align: center
+            padding: 16px
+            transition: all 0.3s ease
+            color: #333
+
+            &:hover
+                text-decoration: none
+                background-color: darken($yellow, 50%)
+                color: #fff
 
 #news-flash
-	color: #fff
-	min-height: 40px
+    color: #fff
+    min-height: 40px
+
+#broker-list
+    background: #ecf0f1
+    padding: 50px 0 30px
+
+    .broker-container
+        background-color: rgba($asphalt, .7)
+        padding: 40px 20px 20px
+        border-radius: 5px
+
+        .btn
+            border-radius: 0
+            padding: 10px 50px
+
+    .broker-item
+        color: #fff
+        margin-bottom: 20px
+
+        .down
+            color: #e74c3c
+
+        .up
+            color: #1ecc71
+
+        .number
+            font-size: .8em
+            margin-left: 5px
+
+        p
+            font-weight: bold
+            margin-bottom: 0
+            padding: 5px 20px
+
+        .broker-title
+            background: #34495e
+
+        .broker-price
+            background: #2c3e50
+
+    .footer
+        font-size: 1.1em
+        font-weight: 700
+        font-style: italic
+        margin-top: 20px
 
 #pricing-table
-    background: #bdc3c7
-    padding: 100px 0
+    background: #fff
+    padding: 50px 0
 
-    .container
-        font-family: "Lato", sans-serif
+    .header
+
+        h1
+            font-weight: 700
+
+        p
+            color: $asbestos
 
     .turqoise-item
         .content-top, .custom-icon
@@ -99,7 +163,7 @@
 
         .garnish
             display: inline-block
-            margin-top: -40px
+            margin-top: -41px
 
         .custom-icon
             box-sizing: content-box
@@ -132,7 +196,7 @@
                     font-size: 1.5em
 
             .subscribe
-                font-size: 16px
+                font-size: 16px !important
 
     .pricing-item
         .content-top
