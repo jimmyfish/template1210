@@ -19,6 +19,9 @@
     color: #fff
     padding: 8px
 
+    a
+        color: #fff
+
 #first-section
     min-height: 200px
     overflow: hidden
@@ -41,6 +44,40 @@
         background-repeat: no-repeat
         background-size: cover
         background-position: center center
+        padding: 25px
+
+        .content-title
+            font-size: 2em
+
+        .content-subtitle
+            font-size: 1.5em
+            font-weight: 300
+
+        .slider-wrapper
+
+            .slider-control
+                width: 100%
+                text-align: right
+                margin-bottom: 20px
+
+                a
+                    color: #fff
+
+                    &:hover
+                        text-decoration: none
+
+                    &:nth-child(1)
+                        margin-right: 5px
+
+            .carousel
+
+                .item
+
+                    img
+                        object-fit: cover
+                        background-position: center
+                        height: 250px
+                        width: 100%
 
     .content
         color: #fff
@@ -94,6 +131,10 @@
         .btn
             border-radius: 0
             padding: 10px 50px
+
+            &:hover
+                background: $pome
+                color: #fff
 
     .broker-item
         color: #fff
