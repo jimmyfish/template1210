@@ -43,7 +43,7 @@
         width: 63.667%
 
     .slider-content
-        background-image: url("../img/1.jpg")
+        background-image: url("../img/123.png")
         background-repeat: no-repeat
         background-size: cover
         background-position: center center
@@ -57,30 +57,16 @@
             font-weight: 300
 
         .slider-wrapper
+            margin: 50px 25px
 
-            .slider-control
-                width: 100%
-                text-align: right
-                margin-bottom: 20px
-
-                a
-                    color: #fff
-
-                    &:hover
-                        text-decoration: none
-
-                    &:nth-child(1)
-                        margin-right: 5px
-
-            .carousel
+            .slider-inner
 
                 .item
+                    margin-left: 10px
+                    margin-right: 10px
 
-                    img
-                        object-fit: cover
-                        background-position: center
-                        height: 250px
-                        width: 100%
+                .slider-cloned
+                    margin: 0
 
     .popover
         top: -1px !important
@@ -92,11 +78,15 @@
         box-shadow: none !important
         border: 0
 
+        .popover-title
+            // background: $baseDarkColor
+
         .popover-content
             overflow-y: scroll
             overflow-x: hidden
             min-height: 577px !important
             max-height: 577px !important
+            // background: $darkColorAlt
 
         label
             font-weight: normal

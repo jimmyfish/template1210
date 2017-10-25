@@ -18,4 +18,10 @@ $(function() {
     $('[data-toggle="popover"]').on('click', function(e) {
         $('[data-toggle="popover"]').not(this).popover('hide');
     });
+
+    $('.slider-inner').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+    });
 });
