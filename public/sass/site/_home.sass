@@ -25,6 +25,8 @@
 #first-section
     min-height: 200px
     overflow: hidden
+    position: relative
+    z-index: 1
 
     [class^="col-md"]
         min-height: 610px
@@ -70,23 +72,70 @@
 
     .popover
         top: -1px !important
-        left: -780px !important
-        width: 790px !important
-        max-width: 790px !important
+        left: -852px !important;
+        width: 862px !important;
+        max-width: 1000px !important;
         color: #000
         border-radius: 0
         box-shadow: none !important
         border: 0
+        padding: 0 !important
 
         .popover-title
-            // background: $baseDarkColor
+            background: #DE1B1B;
+            border: none;
+            border-radius: 0;
+            padding: 13px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #fff;
 
         .popover-content
-            overflow-y: scroll
+            overflow-y: auto
             overflow-x: hidden
             min-height: 577px !important
             max-height: 577px !important
-            // background: $darkColorAlt
+
+            .select2-container--default .select2-selection--single
+                background-color: #fff
+                border: 1px solid #ccc
+                border-radius: 0
+                font-size: 14px
+                height: 34px
+                padding: 3px 5px
+
+            .select2-container--default .select2-selection--single .select2-selection__arrow
+                height: 34px
+
+            .input-group-addon:first-child
+                border-radius: 0
+
+            input
+
+                &:required
+                    border: 1px solid $turqoise
+
+                &.has-error
+                    border: 1px solid $pome
+
+            .form-control
+                border-radius: 0
+                box-shadow: none
+                background: #fafafa
+
+            .btn
+                text-transform: uppercase
+                font-weight: 700
+                transition: all .4s ease
+                border-radius: 0
+
+            .btn-submit
+                background: $baseColor
+                color: #fff
+
+                &:hover
+                    background: darken($baseColor, 10%)
 
         label
             font-weight: normal
@@ -121,7 +170,7 @@
         p
             margin: 0
 
-        a
+        .item
             border-bottom: 1px solid darken($yellow, 10%)
             display: block
             text-align: center

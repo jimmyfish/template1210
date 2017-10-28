@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../web/fonts/styles.css">
     <link rel="stylesheet" href="../web/css/app.min.css">
 </head>
@@ -142,7 +143,7 @@
                 <div class="col-md-1 yellow-background content">
                     <div class="icon-bar">
                         <!-- MENU ITEM -->
-                        <a href="#" data-toggle="popover" data-placement="left" data-title="Header" id="item-1">
+                        <a href="#" data-toggle="popover" data-placement="left" data-title="Header" id="item-1" class="item">
                             <p><i class="icon icon-man-people-streamline-user fa-2x"></i></p>
                             Register
                         </a>
@@ -151,39 +152,93 @@
                             <div class="popover-head hide">Register</div>
                             <div class="popover-content hide">
                                 <form>
-                                    <div class="form-group"><label for="">Username</label><input type="text" class="form-control"></div>
-                                    <div class="form-group"><label for="">Surname</label><input type="text" class="form-control"></div>
-                                    <div class="form-group"><label for="">Email</label><input type="text" class="form-control"></div>
-                                    <div class="form-group"><label for="">Password</label><input type="text" class="form-control"></div>
-                                    <div class="form-group"><label for="">Repeat Password</label><input type="text" class="form-control"></div>
-                                    <div class="form-group">
-                                        <p>Address</p><textarea name="text-area" id="" cols="30" rows="10"></textarea></div>
-                                    <div class="form-group"><label for="">Repeat Password</label><input type="text" class="form-control"></div>
-                                    <div class="form-group"><label for="">Repeat Password</label><input type="text" class="form-control"></div>
-                                    <div class="form-group"><label for="">Repeat Password</label><input type="text" class="form-control"></div>
-                                    <div class="form-group"><label for="">Repeat Password</label><input type="text" class="form-control"></div>
-                                    <div class="form-group"><input type="submit" value="Submit This" class="btn btn-primary btn-block"></div>
+                                    <div class="form-group"><label for="">Username :</label><input type="text" class="form-control"></div>
+                                    <div class="form-group"><label for="">Email :</label><input type="email" class="form-control"></div>
+                                    <div class="form-group"><label for="">Kata sandi :</label><input type="password" class="form-control"></div>
+                                    <div class="form-group"><label for="">Ulangi kata sandi :</label><input type="password" class="form-control"></div>
+                                    <div class="checkbox"><label for=""></label><input type="checkbox" name="" id=""><span> Saya menerima <a href="#">Peraturan dan Kebijakan</a> yang telah ditetapkan</span></div>
+                                    <div class="form-group"><input type="text" class="btn btn-submit btn-block" value="Daftar"></div>
                                 </form>
                             </div>
                         </div>
 
-                        <a href="#" data-toggle="popover" data-placement="left" data-content="Something" data-title="Header" id="item-2">
+                        <a href="#" data-toggle="popover" data-placement="left" data-title="Header" id="item-2" class="item">
                             <p><i class="icon icon-book-dowload-streamline fa-2x"></i></p>
                             Deposit
                         </a>
-                        <a href="#" data-toggle="popover" data-placement="left" data-content="Something" data-title="Header" id="item-3">
+                        <!-- CONTENT FOR ABOVE -->
+                        <div class="content-form">
+                            <div class="popover-head hide">Deposit</div>
+                            <div class="popover-content hide">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="deposit__broker">Broker :</label>
+                                        <select name="deposit__broker" id="deposit__broker" placeholder="Pilih Broker" class="form-control">
+                                            <option value="0">Item 1</option>
+                                            <option value="0">Item 2</option>
+                                            <option value="0">Item 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Login :</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Email :</label>
+                                        <input type="email" name="" id="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Phone :</label>
+                                        <input type="number" name="" id="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Nama Bank :</label>
+                                        <input type="text" name="" id="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Akun Bank :</label>
+                                        <input type="text" class="form-control has-error">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Bank Beneficiary Name :</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Bank Tujuan :</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Item</option>
+                                            <option value="">Item</option>
+                                            <option value="">Item</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Jumlah (USD) :</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon" id="ammount">$</span>
+                                            <input type="text" class="form-control" placeholder="Amount" aria-describedby="ammount">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">File :</label>
+                                        <input type="file" name="" id="">
+                                    </div>
+                                    <div class="form-group"><input type="submit" value="Deposit" class="btn btn-submit btn-block"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="#" data-toggle="popover" data-placement="left" data-content="Something" data-title="Header" id="item-3" class="item">
                             <p><i class="icon icon-streamline-suitcase-travel fa-2x"></i></p>
                             Withdrawal
                         </a>
-                        <a href="#" data-toggle="popover" data-placement="left" data-content="Something" data-title="Header" id="item-4">
+                        <a href="#" data-toggle="popover" data-placement="left" data-content="Something" data-title="Header" id="item-4" class="item">
                             <p><i class="icon icon-receipt-shopping-streamline fa-2x"></i></p>
                             Report
                         </a>
-                        <a href="#" data-toggle="popover" data-placement="left" data-content="Something" data-title="Header" id="item-5">
+                        <a href="#" data-toggle="popover" data-placement="left" data-content="Something" data-title="Header" id="item-5" class="item">
                             <p><i class="icon icon-remote-control-streamline fa-2x"></i></p>
                             Contact us
                         </a>
-                        <a href="#" data-toggle="popover" data-placement="left" data-content="Something" data-title="Header" id="item-6">
+                        <a href="#" data-toggle="popover" data-placement="left" data-content="Something" data-title="Header" id="item-6" class="item">
                             <p><i class="icon icon-speech-streamline-talk-user fa-2x"></i></p>
                             Live chat
                         </a>
@@ -194,7 +249,15 @@
         </div>
     </section>
     <section id="news-flash" class="dark-background-alt">
-        &nbsp;
+        <form>
+            <div class="form-group">
+                <select name="deposit__broker" id="broker-name">
+                    <option value="0">Item 1</option>
+                    <option value="0">Item 2</option>
+                    <option value="0">Item 3</option>
+                </select>
+            </div>
+        </form>
     </section>
     <section id="broker-list">
         <p class="section-title">
@@ -471,6 +534,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <script src="../web/js/app.min.js" charset="utf-8"></script>
 </body>
 
