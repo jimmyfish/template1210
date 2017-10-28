@@ -20,12 +20,12 @@ $(function() {
             },
             showCallback: function() {
 
-                $(".popover-content select").select2({
-                    containerCss: {
-                        "display": "block"
-                    },
-                    minimumResultsForSearch: -1
-                });
+                // $(".popover-content select").select2({
+                //     containerCss: {
+                //         "display": "block"
+                //     },
+                //     minimumResultsForSearch: -1
+                // });
             },
         })
         .on('shown.bs.popover', function() {

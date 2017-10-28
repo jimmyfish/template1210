@@ -94,8 +94,11 @@
         .popover-content
             overflow-y: auto
             overflow-x: hidden
-            min-height: 577px !important
-            max-height: 577px !important
+            min-height: 570px !important
+            max-height: 570px !important
+
+            form
+                padding-bottom: 100px;
 
             .select2-container--default .select2-selection--single
                 background-color: #fff
@@ -129,10 +132,14 @@
                 font-weight: 700
                 transition: all .4s ease
                 border-radius: 0
+                position: absolute
+                bottom: 0
+                left: 0
 
             .btn-submit
                 background: $baseColor
                 color: #fff
+                z-index: 2
 
                 &:hover
                     background: darken($baseColor, 10%)
