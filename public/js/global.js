@@ -44,4 +44,16 @@ $(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
     });
+
+    var sliderTestimonial = $('#testimonial');
+
+    sliderTestimonial.on('slide.bs.carousel', function(e) {
+        var itemActiveIdentity = sliderTestimonial.find('.item.active').find('.identity'),
+            idName = itemActiveIdentity.find('.name').text(),
+            idImg = itemActiveIdentity.find('img').attr('src'),
+            testimonialId = $('.testimonial-identity');
+
+        $('.testimonial-identity .name-cont .name').text(idName);
+        $('.testimonial-identity .img-cont img').attr('src', idImg);
+    });
 });
