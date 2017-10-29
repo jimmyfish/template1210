@@ -72,8 +72,8 @@
 
     .popover
         top: -1px !important
-        left: -852px !important
-        width: 862px !important
+        left: -340px !important
+        width: 350px !important
         max-width: 1000px !important
         color: #000
         border-radius: 0
@@ -104,7 +104,7 @@
                 [class^="col-md-"]
                     min-height: auto
 
-                    .col-sm-3
+                    .col-sm-6
                         padding-left: 0
 
                 .contact-title
@@ -119,6 +119,12 @@
 
             form
                 padding-bottom: 100px
+
+                option
+                    padding: 5px
+
+                    &:hover, &:checked
+                        box-shadow: 0 0 10px 100px $baseColor inset
 
             .select2-container--default .select2-selection--single
                 background-color: #fff
@@ -152,9 +158,6 @@
                 font-weight: 700
                 transition: all .4s ease
                 border-radius: 0
-                position: absolute
-                bottom: 0
-                left: 0
 
             .btn-submit
                 background: $baseColor
