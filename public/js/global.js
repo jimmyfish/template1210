@@ -56,4 +56,15 @@ $(function() {
         $('.testimonial-identity .name-cont .name').text(idName);
         $('.testimonial-identity .img-cont img').attr('src', idImg);
     });
+
+    var newsItem = $('#news-flash'),
+        itemLen = newsItem.find('.item').length,
+        activeItem = newsItem.
+        i = 0;
+
+    console.log(itemLen);
+
+    newsItem.each(function() {
+
+    });
 });
